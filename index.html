@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Trading Mind // Neuro-Finance & Trading Psychology</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slides.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       Top Telemetry Header
+       =================================================================== -->
+  <header class="telemetry-header">
+    <div class="brand-section">
+      <div class="brand-logo-icon">TM</div>
+      <div class="brand-title">The Trading Mind</div>
+      <span class="brand-badge">NEURO-FINANCE LAB</span>
+    </div>
+
+    <div class="header-status-group">
+      <div id="backend-status-pill" class="status-pill">
+        <span class="status-indicator-dot"></span>
+        <span id="backend-status-text">INITIALIZING ENGINE...</span>
+      </div>
+
+      <div class="header-actions">
+        <button id="btn-toggle-sound" class="icon-btn" title="Toggle Audio (S)">🔊</button>
+        <button id="btn-toggle-overview" class="icon-btn" title="Slide Overview (O)">☷</button>
+        <button id="btn-toggle-help" class="icon-btn" title="Keyboard Shortcuts (?)">?</button>
+        <button id="btn-toggle-fullscreen" class="icon-btn" title="Fullscreen (F)">⛶</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       Slides Viewport (10 Slides)
+       =================================================================== -->
+  <main id="deck-viewport">
+
+    <!-- SLIDE 1: The Anatomy of a Trade -->
+    <section id="slide-1" class="slide active">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="slide-meta-row">
+            <span class="slide-category">Module 01 // Neuro-Cognitive Architecture</span>
+            <span class="slide-tag">Prefrontal Cortex vs Amygdala</span>
+          </div>
+          <h1 class="slide-title">The Anatomy of a Trade</h1>
+          <p class="slide-subtitle">
+            Financial decision-making is not purely analytical. It is an incessant biological tug-of-war between high-order rational planning and primal survival threat responses.
+          </p>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2col">
+            <!-- Left: Neural Conflict Breakdown -->
+            <div class="card highlight">
+              <div class="card-header">
+                <span class="card-title">Dual-Process Decision Model</span>
+                <span class="card-tag">SYSTEM 1 vs SYSTEM 2</span>
+              </div>
+              <div class="grid-2col equal" style="gap: 1rem; margin-top: 0.5rem;">
+                <div class="stat-box" style="border-left: 3px solid var(--cyan-primary);">
+                  <div class="stat-label">Prefrontal Cortex (PFC)</div>
+                  <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-highlight); margin: 0.35rem 0;">Executive Rationality</div>
+                  <div class="stat-desc">
+                    Calculates expected values, enforces position limits, adheres to trading plans. High energy consumption, slow execution, vulnerable to mental fatigue.
+                  </div>
+                </div>
+                <div class="stat-box" style="border-left: 3px solid var(--crimson-danger);">
+                  <div class="stat-label">Amygdala & Limbic Core</div>
+                  <div style="font-size: 0.95rem; font-weight: 700; color: var(--crimson-danger); margin: 0.35rem 0;">Limbic Threat System</div>
+                  <div class="stat-desc">
+                    Processes market losses as physical survival threats. Triggers fight-or-flight, hijacking rational faculties into revenge trading or paralysis.
+                  </div>
+                </div>
+              </div>
+
+              <div class="terminal-card" style="margin-top: 0.5rem;">
+                <div class="terminal-card-top">
+                  <span class="term-dot red"></span>
+                  <span class="term-dot yellow"></span>
+                  <span class="term-dot green"></span>
+                  <span>NEURO-TRANSMITTER TELEMETRY</span>
+                </div>
+                <div class="terminal-logs">
+                  <div><span class="cyan">[DOPAMINE]:</span> Spikes on anticipation of gain, NOT realization. Induces compulsive chart-watching.</div>
+                  <div><span class="red">[CORTISOL]:</span> Floods bloodstream during adverse drawdowns. Shrinks cognitive horizon to immediate relief.</div>
+                  <div><span class="green">[SEROTONIN]:</span> Regulates emotional equilibrium and impulse inhibition. Depleted by sleep deprivation.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Insight Column -->
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">The Trader's Trilemma</span>
+                <span class="card-tag">PARADOX</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                In evolutionary history, quick pattern recognition and loss aversion kept humans alive. In modern liquid financial markets, the exact same instincts guarantee account destruction.
+              </p>
+              <div class="grid-3col" style="margin-top: 0.5rem;">
+                <div class="stat-box">
+                  <div class="stat-label">Evolutionary Edge</div>
+                  <div class="stat-value emerald" style="font-size: 1.25rem;">Survive</div>
+                  <div class="stat-desc">Flee loss immediately</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">Market Reality</div>
+                  <div class="stat-value crimson" style="font-size: 1.25rem;">Punish</div>
+                  <div class="stat-desc">Whipsawed by noise</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">Systematic Fix</div>
+                  <div class="stat-value cyan" style="font-size: 1.25rem;">Automate</div>
+                  <div class="stat-desc">Fixed rules & hard stops</div>
+                </div>
+              </div>
+              <div style="background: rgba(0, 240, 255, 0.05); border: 1px solid var(--bg-glass-border); border-radius: var(--radius-md); padding: 1rem; margin-top: auto;">
+                <div style="font-size: 0.8rem; font-weight: 700; color: var(--cyan-primary); margin-bottom: 0.25rem;">KEY TAKEAWAY:</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.45;">
+                  You cannot eliminate limbic emotions. Mastery consists of constructing systematic guardrails that remove decision-making authority from your amygdala during active market exposure.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: The Neurochemistry of Market Stress -->
+    <section id="slide-2" class="slide">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="slide-meta-row">
+            <span class="slide-category">Module 02 // Physiological Telemetry</span>
+            <span class="slide-tag">Heart Rate, Cortisol & Volatility</span>
+          </div>
+          <h1 class="slide-title">The Neurochemistry of Market Stress</h1>
+          <p class="slide-subtitle">
+            Observe the simulated bio-physiological feedback loop as volatility escalates from calm consolidation into an adverse liquidity cascade.
+          </p>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2col">
+            <!-- Left: Interactive Bio-Feedback Simulator -->
+            <div class="card highlight">
+              <div class="card-header">
+                <span class="card-title">Live Stress Response Engine</span>
+                <span class="card-tag">BIO-FEEDBACK</span>
+              </div>
+              
+              <div class="slider-group" style="margin-top: 0.5rem;">
+                <div class="slider-label-row">
+                  <span class="slider-label">Market Volatility (VIX Index Proxy):</span>
+                  <span id="slider-volatility-val" class="slider-val">18.5 pts</span>
+                </div>
+                <input id="slider-volatility" type="range" class="range-slider" min="10" max="80" value="18" step="1">
+              </div>
+
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span class="slider-label">Open Position Drawdown:</span>
+                  <span id="slider-drawdown-val" class="slider-val">-1.5%</span>
+                </div>
+                <input id="slider-drawdown" type="range" class="range-slider" min="0" max="30" value="1.5" step="0.5">
+              </div>
+
+              <div class="grid-3col" style="margin-top: 0.75rem;">
+                <div class="stat-box">
+                  <div class="stat-label">Heart Rate Proxy</div>
+                  <div id="stat-heart-rate" class="stat-value cyan">72 BPM</div>
+                  <div class="stat-desc">Normal resting pulse</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">Cortisol Concentration</div>
+                  <div id="stat-cortisol" class="stat-value emerald">14.2 µg/dL</div>
+                  <div class="stat-desc">Standard baseline</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">Executive Function</div>
+                  <div id="stat-executive" class="stat-value emerald">92%</div>
+                  <div class="stat-desc">Rational PFC dominant</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Psychological State Analysis -->
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">Cognitive Degradation Profile</span>
+                <span class="card-tag">ANALYSIS</span>
+              </div>
+
+              <div id="stress-phase-indicator" style="background: rgba(0, 240, 255, 0.08); border: 1px solid var(--cyan-primary); border-radius: var(--radius-md); padding: 1rem;">
+                <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-primary); font-weight: 700;">CURRENT MENTAL PHASE:</div>
+                <div id="stress-phase-title" style="font-size: 1.2rem; font-weight: 800; color: #fff; margin: 0.25rem 0;">OPTIMAL FLOW STATE</div>
+                <div id="stress-phase-desc" style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.45;">
+                  Prefrontal cortex maintains full executive governance. Risk calculations remain objective and disciplined.
+                </div>
+              </div>
+
+              <div class="terminal-card" style="margin-top: auto;">
+                <div class="terminal-card-top">
+                  <span class="term-dot yellow"></span>
+                  <span>NEURO-HORMONAL CASCADE</span>
+                </div>
+                <div class="terminal-logs">
+                  <div>1. Visual input triggers sympathetic nervous system excitation.</div>
+                  <div>2. Adrenal medulla pumps epinephrine, elevating heart rate.</div>
+                  <div>3. Hypothalamus-Pituitary-Adrenal (HPA) axis releases cortisol.</div>
+                  <div>4. Blood flow redirects from prefrontal cortex to motor cortex.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: The 3D Emotional Landscape (Three.js) -->
+    <section id="slide-3" class="slide">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="slide-meta-row">
+            <span class="slide-category">Module 03 // 3D WebGL Neural Topography</span>
+            <span class="slide-tag">Three.js Kinetic Visualization</span>
+          </div>
+          <h1 class="slide-title">The 3D Emotional Landscape</h1>
+          <p class="slide-subtitle">
+            An interactive 3D mental manifold visualizing the state transitions between Flow, Greed, Fear, and Tilt. Drag to orbit, wheel to zoom.
+          </p>
+        </div>
+
+        <div class="slide-body">
+          <div class="three-canvas-wrapper">
+            <!-- 3D Canvas Canvas Slot -->
+            <div id="three-container" style="width: 100%; height: 100%;">
+              <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-muted); font-family: var(--font-mono); gap: 0.5rem;">
+                <div style="font-size: 1.5rem; color: var(--cyan-primary);">[ 3D NEURAL MANIFOLD ENGINE ]</div>
+                <div style="font-size: 0.85rem;">Milestone 4 Three.js Interactive WebGL Viewport Target</div>
+              </div>
+            </div>
+
+            <!-- Overlay State Controls -->
+            <div class="three-overlay-controls">
+              <div class="three-hud-badge">
+                <span>STATE:</span>
+                <span id="three-hud-state" style="font-weight: 700; color: #fff;">EQUILIBRIUM (FLOW)</span>
+              </div>
+
+              <div class="pill-selector">
+                <button class="pill-option active" data-state="FLOW">FLOW</button>
+                <button class="pill-option" data-state="GREED">GREED</button>
+                <button class="pill-option" data-state="FEAR">FEAR</button>
+                <button class="pill-option" data-state="TILT">TILT</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-4col">
+            <div class="stat-box">
+              <div class="stat-label">Flow State</div>
+              <div style="font-size: 0.95rem; font-weight: 700; color: var(--cyan-primary); margin: 0.2rem 0;">Harmonic Coherence</div>
+              <div class="stat-desc">Low volatility, balanced dopamine, detached execution.</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Euphoria / Greed</div>
+              <div style="font-size: 0.95rem; font-weight: 700; color: var(--amber-warning); margin: 0.2rem 0;">Hyper-Expansion</div>
+              <div class="stat-desc">Dopamine flood, illusion of control, overleveraging.</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Panic / Fear</div>
+              <div style="font-size: 0.95rem; font-weight: 700; color: var(--crimson-danger); margin: 0.2rem 0;">Contraction</div>
+              <div class="stat-desc">Cortisol spike, threat paralysis, premature exit.</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Tilt Disruption</div>
+              <div style="font-size: 0.95rem; font-weight: 700; color: var(--purple-accent); margin: 0.2rem 0;">Chaotic Fragmentation</div>
+              <div class="stat-desc">Total executive bypass, vengeful sizing escalation.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: Prospect Theory & Loss Aversion -->
+    <section id="slide-4" class="slide">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="slide-meta-row">
+            <span class="slide-category">Module 04 // Behavioral Economics</span>
+            <span class="slide-tag">Kahneman & Tversky (1979)</span>
+          </div>
+          <h1 class="slide-title">Prospect Theory & Loss Aversion</h1>
+          <p class="slide-subtitle">
+            Human psychology processes financial gains and losses asymmetrically. The psychological pain of losing $1,000 is more than twice as intense as the joy of winning $1,000.
+          </p>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2col">
+            <!-- Left: S-Curve Visualization Slot -->
+            <div class="card highlight">
+              <div class="card-header">
+                <span class="card-title">Subjective Value Function v(x)</span>
+                <span class="card-tag">ASYMMETRIC S-CURVE</span>
+              </div>
+              <div class="chart-box" id="prospect-chart-container">
+                <div style="font-family: var(--font-mono); color: var(--text-dim); text-align: center;">
+                  [ Prospect Theory Value Curve SVG Canvas ]<br>
+                  <span style="font-size: 0.75rem; color: var(--cyan-primary);">v(x) = x^α (x ≥ 0)  |  v(x) = -λ(-x)^β (x < 0)</span>
+                </div>
+              </div>
+              <div class="grid-3col">
+                <div class="stat-box">
+                  <div class="stat-label">Loss Aversion λ</div>
+                  <div class="stat-value crimson">2.25x</div>
+                  <div class="stat-desc">Pain multiplier on loss</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">Gain Exponent α</div>
+                  <div class="stat-value cyan">0.88</div>
+                  <div class="stat-desc">Diminishing sensitivity</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">Loss Exponent β</div>
+                  <div class="stat-value amber">0.88</div>
+                  <div class="stat-desc">Risk-seeking in losses</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Experiment -->
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">The Live Cognitive Trap</span>
+                <span class="card-tag">EXPERIMENT</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Which choice do you instinctively make? Compare intuitive choice against mathematical expected value.
+              </p>
+              
+              <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--bg-glass-border-subtle); border-radius: var(--radius-md); padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                <div style="font-weight: 700; font-size: 0.9rem; color: var(--text-highlight);">SCENARIO A: GAIN DOMAIN</div>
+                <div class="btn-group">
+                  <button class="btn btn-ghost" style="flex: 1;">Choice 1: 100% chance of +$500</button>
+                  <button class="btn btn-ghost" style="flex: 1;">Choice 2: 50% chance of +$1,000</button>
+                </div>
+              </div>
+
+              <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--bg-glass-border-subtle); border-radius: var(--radius-md); padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                <div style="font-weight: 700; font-size: 0.9rem; color: var(--crimson-danger);">SCENARIO B: LOSS DOMAIN</div>
+                <div class="btn-group">
+                  <button class="btn btn-ghost" style="flex: 1;">Choice 1: 100% chance of -$500</button>
+                  <button class="btn btn-ghost" style="flex: 1;">Choice 2: 50% chance of -$1,000</button>
+                </div>
+              </div>
+
+              <div style="background: rgba(255, 51, 102, 0.06); border: 1px solid var(--crimson-danger); border-radius: var(--radius-md); padding: 0.85rem; margin-top: auto;">
+                <div style="font-size: 0.8rem; font-weight: 700; color: var(--crimson-danger); margin-bottom: 0.2rem;">THE DISPOSITION ANOMALY:</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">
+                  Traders choose the sure gain in Scenario A (risk averse in profit), but choose the 50% gamble in Scenario B (risk seeking in loss). This guarantees premature profit-taking and ruinous bag-holding.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: The Tilt Spiral & Revenge Trading -->
+    <section id="slide-5" class="slide">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="slide-meta-row">
+            <span class="slide-category">Module 05 // Emotional Feedback Cycles</span>
+            <span class="slide-tag">Tilt Mechanics & Revenge Trading</span>
+          </div>
+          <h1 class="slide-title">The Tilt Spiral & Revenge Trading</h1>
+          <p class="slide-subtitle">
+            How a normal sequence of independent market losses triggers acute cognitive fatigue, escalates risk propensity, and culminates in account annihilation.
+          </p>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2col">
+            <!-- Left: Tilt Progression Stages -->
+            <div class="card highlight">
+              <div class="card-header">
+                <span class="card-title">The 5-Stage Descent</span>
+                <span class="card-tag">DEGRADATION TIMELINE</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+                <div class="stat-box" style="border-left: 3px solid var(--emerald-success);">
+                  <div class="stat-label">Stage 1: The Initial Scratch (0-1 Losses)</div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted);">Normal statistical variance. Trader follows rules calmly.</div>
+                </div>
+                <div class="stat-box" style="border-left: 3px solid var(--cyan-primary);">
+                  <div class="stat-label">Stage 2: Subtle Frustration (2-3 Losses)</div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted);">Dopamine drop. Trader starts refreshing charts compulsively.</div>
+                </div>
+                <div class="stat-box" style="border-left: 3px solid var(--amber-warning);">
+                  <div class="stat-label">Stage 3: Rule Erosion (4 Losses)</div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted);">Entering sub-optimal setups to "get back to even". Stop-losses moved wider.</div>
+                </div>
+                <div class="stat-box" style="border-left: 3px solid var(--crimson-danger);">
+                  <div class="stat-label">Stage 4: Active Revenge (5+ Losses)</div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted);">Position size doubled or tripled. Total emotional takeover.</div>
+                </div>
+                <div class="stat-box" style="border-left: 3px solid var(--purple-accent);">
+                  <div class="stat-label">Stage 5: Full Tilt & Ruin</div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted);">Catastrophic margin call or exhaustion of risk capital.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Tilt Decay Calculator Slot -->
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">Live Cognitive Fatigue Engine</span>
+                <span class="card-tag">PYTHON BACKEND MODEL</span>
+              </div>
+              
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span class="slider-label">Consecutive Losing Trades:</span>
+                  <span id="slider-tilt-losses-val" class="slider-val">3 Losses</span>
+                </div>
+                <input id="slider-tilt-losses" type="range" class="range-slider" min="0" max="10" value="3" step="1">
+              </div>
+
+              <div class="grid-2col equal" style="margin-top: 0.5rem;">
+                <div class="stat-box">
+                  <div class="stat-label">Decision Quality</div>
+                  <div id="stat-tilt-quality" class="stat-value cyan">64.2%</div>
+                  <div class="stat-desc">Prefrontal governance</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">Risk Escalation</div>
+                  <div id="stat-tilt-risk-mult" class="stat-value crimson">1.48x</div>
+                  <div class="stat-desc">Impulsive sizing multiplier</div>
+                </div>
+              </div>
+
+              <div class="terminal-card" style="margin-top: auto;">
+                <div class="terminal-card-top">
+                  <span class="term-dot red"></span>
+                  <span>PREVENTATIVE CIRCUIT BREAKER</span>
+                </div>
+                <div class="terminal-logs">
+                  <div class="yellow">MAX DAILY LOSS LIMIT: Stop trading immediately after 3 consecutive losses or 3% total daily drawdown.</div>
+                  <div class="cyan">MANDATORY 15-MINUTE TIMEOUT: Step away from screens to clear cortisol from the bloodstream.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: The Gambler's Fallacy & Recency Bias -->
+    <section id="slide-6" class="slide">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="slide-meta-row">
+            <span class="slide-category">Module 06 // Probability Illusions</span>
+            <span class="slide-tag">Independent Trials vs Pattern Clinging</span>
+          </div>
+          <h1 class="slide-title">The Gambler's Fallacy & Recency Bias</h1>
+          <p class="slide-subtitle">
+            Markets do not have memory. The human brain constantly sees non-existent narratives in purely random statistical noise.
+          </p>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2col">
+            <!-- Left: Streak Illusion Visualizer -->
+            <div class="card highlight">
+              <div class="card-header">
+                <span class="card-title">Independent Bernoulli Trials</span>
+                <span class="card-tag">PROBABILITY</span>
+              </div>
+              <div style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Consider a series of 6 consecutive red candle closes. What is the probability that the 7th candle is green?
+              </div>
+              
+              <div style="display: flex; gap: 0.5rem; justify-content: center; padding: 1rem 0;">
+                <div style="width: 36px; height: 36px; border-radius: 4px; background: rgba(255, 51, 102, 0.2); border: 1.5px solid var(--crimson-danger); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--crimson-danger);">1</div>
+                <div style="width: 36px; height: 36px; border-radius: 4px; background: rgba(255, 51, 102, 0.2); border: 1.5px solid var(--crimson-danger); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--crimson-danger);">2</div>
+                <div style="width: 36px; height: 36px; border-radius: 4px; background: rgba(255, 51, 102, 0.2); border: 1.5px solid var(--crimson-danger); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--crimson-danger);">3</div>
+                <div style="width: 36px; height: 36px; border-radius: 4px; background: rgba(255, 51, 102, 0.2); border: 1.5px solid var(--crimson-danger); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--crimson-danger);">4</div>
+                <div style="width: 36px; height: 36px; border-radius: 4px; background: rgba(255, 51, 102, 0.2); border: 1.5px solid var(--crimson-danger); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--crimson-danger);">5</div>
+                <div style="width: 36px; height: 36px; border-radius: 4px; background: rgba(255, 51, 102, 0.2); border: 1.5px solid var(--crimson-danger); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--crimson-danger);">6</div>
+                <div style="width: 36px; height: 36px; border-radius: 4px; background: rgba(0, 240, 255, 0.2); border: 1.5px dashed var(--cyan-primary); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--cyan-primary);">?</div>
+              </div>
+
+              <div class="grid-2col equal">
+                <div class="stat-box" style="border-left: 3px solid var(--crimson-danger);">
+                  <div class="stat-label">Intuitive Human Bias</div>
+                  <div style="font-size: 1.1rem; font-weight: 700; color: var(--crimson-danger); margin: 0.35rem 0;">"Reversal is DUE"</div>
+                  <div class="stat-desc">Belief that random sequences must balance out immediately.</div>
+                </div>
+                <div class="stat-box" style="border-left: 3px solid var(--emerald-success);">
+                  <div class="stat-label">Mathematical Reality</div>
+                  <div style="font-size: 1.1rem; font-weight: 700; color: var(--emerald-success); margin: 0.35rem 0;">P(Green) = 50.0%</div>
+                  <div class="stat-desc">Past independent trials exert exactly zero influence on future outcomes.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Recency Bias & Market Regimes -->
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">Recency Bias Distortion</span>
+                <span class="card-tag">COGNITIVE ANCHORING</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Traders disproportionately weight whatever happened in the last 5 trades over the statistical distribution of the last 500 trades.
+              </p>
+              
+              <div class="stat-box" style="margin-top: 0.5rem;">
+                <div class="stat-label">After 4 Consecutive Wins:</div>
+                <div style="color: var(--amber-warning); font-size: 0.85rem; margin-top: 0.25rem;">
+                  <strong>Overconfidence Trap:</strong> "My strategy can't lose. I'll increase position size to 5%." Result: One loss destroys prior 4 wins.
+                </div>
+              </div>
+
+              <div class="stat-box">
+                <div class="stat-label">After 4 Consecutive Losses:</div>
+                <div style="color: var(--crimson-danger); font-size: 0.85rem; margin-top: 0.25rem;">
+                  <strong>Hesitation Trap:</strong> "My edge is broken. I'll skip the next signal." Result: The skipped trade was the 5R winner that would recover the series.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7: The Law of Large Numbers & Expectancy -->
+    <section id="slide-7" class="slide">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="slide-meta-row">
+            <span class="slide-category">Module 07 // Quantitative Edge</span>
+            <span class="slide-tag">Mathematical Expectancy & Variance</span>
+          </div>
+          <h1 class="slide-title">The Law of Large Numbers & Expectancy</h1>
+          <p class="slide-subtitle">
+            Trading is not about being right on individual trades. It is about executing a statistically positive edge over large sample sizes while surviving drawdowns.
+          </p>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2col">
+            <!-- Left: Expectancy Matrix Calculator -->
+            <div class="card highlight">
+              <div class="card-header">
+                <span class="card-title">The Master Expectancy Formula</span>
+                <span class="card-tag">EV EQUATION</span>
+              </div>
+              
+              <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid var(--bg-glass-border); border-radius: var(--radius-md); padding: 1rem; text-align: center; font-family: var(--font-mono); font-size: 1.05rem; color: var(--cyan-primary);">
+                EV = (Win Rate × Avg Win) - (Loss Rate × Avg Loss)
+              </div>
+
+              <div class="slider-group" style="margin-top: 0.5rem;">
+                <div class="slider-label-row">
+                  <span class="slider-label">Win Rate (%):</span>
+                  <span id="slider-expectancy-winrate-val" class="slider-val">45%</span>
+                </div>
+                <input id="slider-expectancy-winrate" type="range" class="range-slider" min="20" max="80" value="45" step="1">
+              </div>
+
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span class="slider-label">Risk-to-Reward Ratio (Payoff):</span>
+                  <span id="slider-expectancy-rr-val" class="slider-val">2.0 : 1</span>
+                </div>
+                <input id="slider-expectancy-rr" type="range" class="range-slider" min="0.5" max="5.0" value="2.0" step="0.1">
+              </div>
+
+              <div class="grid-3col">
+                <div class="stat-box">
+                  <div class="stat-label">Expectancy / Trade</div>
+                  <div id="stat-ev-value" class="stat-value emerald">+0.35 R</div>
+                  <div class="stat-desc">Per $1.00 risked</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">EV Over 100 Trades</div>
+                  <div id="stat-ev-100" class="stat-value cyan">+35.0 R</div>
+                  <div class="stat-desc">Statistical drift</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">Min Breakeven Win%</div>
+                  <div id="stat-ev-breakeven" class="stat-value text-muted">33.3%</div>
+                  <div class="stat-desc">1 / (1 + R:R)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: The 1,000-Trade Perspective -->
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">Sample Size & Variance Illusion</span>
+                <span class="card-tag">1,000-TRADE DISCIPLINE</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Even with a 60% win rate, there is an <strong>86% mathematical probability</strong> of experiencing 5 consecutive losses at least once across 100 trades.
+              </p>
+
+              <div class="chart-box" id="expectancy-chart-container">
+                <div style="font-family: var(--font-mono); color: var(--text-dim); text-align: center;">
+                  [ Trade Distribution Scatter & Cumulative Drift Canvas ]
+                </div>
+              </div>
+
+              <div style="background: rgba(0, 240, 255, 0.05); border: 1px solid var(--bg-glass-border-subtle); border-radius: var(--radius-md); padding: 0.85rem; margin-top: auto;">
+                <div style="font-size: 0.8rem; font-weight: 700; color: var(--cyan-primary); margin-bottom: 0.2rem;">THE CASINO MINDSET:</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">
+                  The casino never panics when a roulette player hits red 5 times in a row. They know the house edge is mathematically unstoppable over 100,000 spins.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8: Position Sizing & Risk of Ruin -->
+    <section id="slide-8" class="slide">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="slide-meta-row">
+            <span class="slide-category">Module 08 // Capital Preservation Mathematics</span>
+            <span class="slide-tag">Kelly Criterion vs Martingale vs Fixed</span>
+          </div>
+          <h1 class="slide-title">Position Sizing & Risk of Ruin</h1>
+          <p class="slide-subtitle">
+            Risking too much on a positive expectancy system guarantees eventual mathematical bankruptcy. Sizing is the supreme arbiter of trader survival.
+          </p>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2col">
+            <!-- Left: Monte Carlo Ruin Visualizer Slot -->
+            <div class="card highlight">
+              <div class="card-header">
+                <span class="card-title">Monte Carlo Multi-Path Equity Simulator</span>
+                <span class="card-tag">5,000 PATHS</span>
+              </div>
+              
+              <div class="chart-box" id="ruin-chart-container">
+                <div style="font-family: var(--font-mono); color: var(--text-dim); text-align: center;">
+                  [ Vectorized Monte Carlo Equity Pathways & Drawdown Envelope ]
+                </div>
+              </div>
+
+              <div class="grid-3col">
+                <div class="stat-box">
+                  <div class="stat-label">Probability of Ruin</div>
+                  <div id="stat-ruin-prob" class="stat-value emerald">0.0%</div>
+                  <div class="stat-desc">>50% drawdown risk</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">Full Kelly Fraction</div>
+                  <div id="stat-ruin-kelly" class="stat-value cyan">16.6%</div>
+                  <div class="stat-desc">Theoretical max edge</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-label">Safe Recommended Risk</div>
+                  <div id="stat-ruin-rec" class="stat-value emerald">1.5 - 2.0%</div>
+                  <div class="stat-desc">Quarter/Half Kelly buffer</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Sizing Models Comparison -->
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">Position Sizing Methodologies</span>
+                <span class="card-tag">COMPARISON</span>
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+                <div class="stat-box" style="border-left: 3px solid var(--emerald-success);">
+                  <div class="stat-label">1. Fixed Fractional (Recommended)</div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                    Risk 1% to 2% of current account equity. As equity declines, dollar risk automatically contracts, making ruin mathematically near-impossible.
+                  </div>
+                </div>
+
+                <div class="stat-box" style="border-left: 3px solid var(--cyan-primary);">
+                  <div class="stat-label">2. Half-Kelly Criterion</div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                    Captures ~75% of full Kelly growth with only ~50% of the agonizing drawdown volatility.
+                  </div>
+                </div>
+
+                <div class="stat-box" style="border-left: 3px solid var(--crimson-danger);">
+                  <div class="stat-label">3. Martingale (Fatal Gambler's Trap)</div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                    Doubling bet size after each loss. Guarantees 100% certainty of total account liquidation during normal market distribution tails.
+                  </div>
+                </div>
+              </div>
+
+              <div class="terminal-card" style="margin-top: auto;">
+                <div class="terminal-card-top">
+                  <span class="term-dot yellow"></span>
+                  <span>DRAWDOWN RECOVERY ASYMMETRY</span>
+                </div>
+                <div class="terminal-logs">
+                  <div>-10% Loss requires <span class="green">+11.1%</span> to recover.</div>
+                  <div>-30% Loss requires <span class="yellow">+42.8%</span> to recover.</div>
+                  <div>-50% Loss requires <span class="red">+100.0%</span> to recover.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 9: The Emotional Journal & Bias Diagnostic -->
+    <section id="slide-9" class="slide">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="slide-meta-row">
+            <span class="slide-category">Module 09 // Self-Diagnosis</span>
+            <span class="slide-tag">Interactive Bias Audit</span>
+          </div>
+          <h1 class="slide-title">The Emotional Journal & Bias Diagnostic</h1>
+          <p class="slide-subtitle">
+            Take the 6-factor cognitive vulnerability audit to generate your personal psychological profile and targeted behavioral mitigation protocol.
+          </p>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2col">
+            <!-- Left: Interactive Audit Questions -->
+            <div class="card highlight" style="overflow-y: auto; max-height: 520px;">
+              <div class="card-header">
+                <span class="card-title">Cognitive Vulnerability Audit</span>
+                <span class="card-tag">6 QUESTIONS (1 = RARELY, 5 = FREQUENTLY)</span>
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <div class="quiz-question-card">
+                  <div class="quiz-question-text">1. I hold onto red trades hoping they will bounce to break-even:</div>
+                  <div class="quiz-likert-scale" data-question="q1">
+                    <button class="likert-btn" data-val="1">1</button>
+                    <button class="likert-btn" data-val="2">2</button>
+                    <button class="likert-btn selected" data-val="3">3</button>
+                    <button class="likert-btn" data-val="4">4</button>
+                    <button class="likert-btn" data-val="5">5</button>
+                  </div>
+                </div>
+
+                <div class="quiz-question-card">
+                  <div class="quiz-question-text">2. I close winning trades early out of fear the profit will vanish:</div>
+                  <div class="quiz-likert-scale" data-question="q2">
+                    <button class="likert-btn" data-val="1">1</button>
+                    <button class="likert-btn" data-val="2">2</button>
+                    <button class="likert-btn selected" data-val="3">3</button>
+                    <button class="likert-btn" data-val="4">4</button>
+                    <button class="likert-btn" data-val="5">5</button>
+                  </div>
+                </div>
+
+                <div class="quiz-question-card">
+                  <div class="quiz-question-text">3. After a painful loss, I immediately enter another trade to recover:</div>
+                  <div class="quiz-likert-scale" data-question="q3">
+                    <button class="likert-btn" data-val="1">1</button>
+                    <button class="likert-btn selected" data-val="2">2</button>
+                    <button class="likert-btn" data-val="3">3</button>
+                    <button class="likert-btn" data-val="4">4</button>
+                    <button class="likert-btn" data-val="5">5</button>
+                  </div>
+                </div>
+
+                <div class="quiz-question-card">
+                  <div class="quiz-question-text">4. After 3+ consecutive wins, I feel invincible and size up:</div>
+                  <div class="quiz-likert-scale" data-question="q4">
+                    <button class="likert-btn" data-val="1">1</button>
+                    <button class="likert-btn" data-val="2">2</button>
+                    <button class="likert-btn selected" data-val="3">3</button>
+                    <button class="likert-btn" data-val="4">4</button>
+                    <button class="likert-btn" data-val="5">5</button>
+                  </div>
+                </div>
+
+                <div class="quiz-question-card">
+                  <div class="quiz-question-text">5. I believe a reversal is due because price moved in one direction too long:</div>
+                  <div class="quiz-likert-scale" data-question="q5">
+                    <button class="likert-btn" data-val="1">1</button>
+                    <button class="likert-btn selected" data-val="2">2</button>
+                    <button class="likert-btn" data-val="3">3</button>
+                    <button class="likert-btn" data-val="4">4</button>
+                    <button class="likert-btn" data-val="5">5</button>
+                  </div>
+                </div>
+
+                <div class="quiz-question-card">
+                  <div class="quiz-question-text">6. Missing a trade triggers intense FOMO or makes me freeze on the next setup:</div>
+                  <div class="quiz-likert-scale" data-question="q6">
+                    <button class="likert-btn" data-val="1">1</button>
+                    <button class="likert-btn" data-val="2">2</button>
+                    <button class="likert-btn selected" data-val="3">3</button>
+                    <button class="likert-btn" data-val="4">4</button>
+                    <button class="likert-btn" data-val="5">5</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Dynamic Radar Chart & Diagnostic Archetype -->
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">Psychological Radar Map</span>
+                <span class="card-tag">PERSONAL PROFILE</span>
+              </div>
+
+              <div class="chart-box" id="radar-chart-container">
+                <div style="font-family: var(--font-mono); color: var(--text-dim); text-align: center;">
+                  [ Hexagonal Radar Chart Canvas: 6 Bias Dimensions ]
+                </div>
+              </div>
+
+              <div class="stat-box" style="margin-top: 0.5rem;">
+                <div class="stat-label">Diagnosed Trader Archetype:</div>
+                <div id="stat-diag-archetype" style="font-size: 1.1rem; font-weight: 700; color: var(--amber-warning); margin-top: 0.2rem;">
+                  THE ASYMMETRIC BLEEDER
+                </div>
+                <div class="stat-desc">Severe disposition bias: holds losing positions 3x longer than winning targets.</div>
+              </div>
+
+              <div class="stat-box">
+                <div class="stat-label">Overall Vulnerability Score</div>
+                <div id="stat-diag-vulnerability" class="stat-value amber">58.4 / 100</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10: The Master Trader Blueprint -->
+    <section id="slide-10" class="slide">
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="slide-meta-row">
+            <span class="slide-category">Module 10 // Execution Protocol</span>
+            <span class="slide-tag">Operational Mastery & Commitment Contract</span>
+          </div>
+          <h1 class="slide-title">The Master Trader Blueprint</h1>
+          <p class="slide-subtitle">
+            Trading psychology is not conquered by willpower. It is conquered by rigid systems, non-negotiable checklists, and automated circuit breakers.
+          </p>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2col">
+            <!-- Left: Pre-Flight Checklist -->
+            <div class="card highlight">
+              <div class="card-header">
+                <span class="card-title">Mandatory Pre-Flight Execution Checklist</span>
+                <span class="card-tag">SYSTEM 2 LOCK</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+                <label class="checklist-item">
+                  <input type="checkbox" class="checklist-checkbox" checked>
+                  <div>
+                    <div class="checklist-text">1. Setup Conforms to Documented Edge</div>
+                    <div class="checklist-sub">All A+ entry criteria met; no impromptu "gut feeling" or action-seeking trades.</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" class="checklist-checkbox" checked>
+                  <div>
+                    <div class="checklist-text">2. Position Sized Before Entry</div>
+                    <div class="checklist-sub">Fixed 1% account risk calculated against hard stop-loss distance.</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" class="checklist-checkbox" checked>
+                  <div>
+                    <div class="checklist-text">3. Minimum 2.0 Risk-to-Reward Ratio</div>
+                    <div class="checklist-sub">Profit target offers at least double the risk distance to counteract loss aversion.</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" class="checklist-checkbox" checked>
+                  <div>
+                    <div class="checklist-text">4. Daily Circuit Breaker Clear</div>
+                    <div class="checklist-sub">No more than 2 consecutive losses or 3% drawdown incurred during the current session.</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" class="checklist-checkbox">
+                  <div>
+                    <div class="checklist-text">5. Physiological Readiness Confirmed</div>
+                    <div class="checklist-sub">Resting pulse normal, no sleep deprivation, no emotional baggage from outside life.</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Right: Psychological Protocol & Export -->
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">The Trader's Immutable Creed</span>
+                <span class="card-tag">CONTRACT</span>
+              </div>
+
+              <div class="terminal-card">
+                <div class="terminal-card-top">
+                  <span class="term-dot green"></span>
+                  <span>CORE OPERATIONAL PRINCIPLES</span>
+                </div>
+                <div class="terminal-logs">
+                  <div class="cyan">"I accept that any individual trade outcome is completely random."</div>
+                  <div class="green">"I do not need to know what will happen next to make money."</div>
+                  <div class="yellow">"There is a random distribution between wins and losses for any set of variables that define an edge."</div>
+                  <div class="red">"An edge is nothing more than an indication of a higher probability of one thing happening over another."</div>
+                  <div class="cyan">"Every moment in the market is uniquely independent."</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 0.75rem; margin-top: auto;">
+                <button id="btn-export-protocol" class="btn btn-primary" style="flex: 1;">
+                  Export Psychology Protocol (.JSON)
+                </button>
+                <button id="btn-restart-deck" class="btn btn-ghost">
+                  Restart Deck ↺
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       Floating Navigation Dock
+       =================================================================== -->
+  <nav class="nav-dock" aria-label="Slide Navigation">
+    <button id="btn-prev-slide" class="dock-btn" title="Previous Slide (←)">
+      <span>◀</span>
+      <span>PREV</span>
+    </button>
+
+    <div class="slide-counter">
+      <span class="current-idx">01</span>
+      <span style="color: var(--text-dim);">/</span>
+      <span class="total-idx">10</span>
+    </div>
+
+    <div class="progress-track">
+      <div class="progress-fill"></div>
+    </div>
+
+    <button id="btn-next-slide" class="dock-btn" title="Next Slide (→ / Space)">
+      <span>NEXT</span>
+      <span>▶</span>
+    </button>
+
+    <div class="hotkey-hint">
+      <kbd>SPACE</kbd> / <kbd>← →</kbd>
+    </div>
+  </nav>
+
+  <!-- ===================================================================
+       Slide Overview Drawer Modal
+       =================================================================== -->
+  <aside id="overview-modal" class="overview-modal" aria-hidden="true">
+    <div class="overview-header">
+      <div class="overview-title">Presentation Slide Overview</div>
+      <button id="btn-close-overview" class="icon-btn" title="Close (ESC)">✕</button>
+    </div>
+    <div id="overview-grid" class="overview-grid">
+      <!-- Generated dynamically by deck.js -->
+    </div>
+  </aside>
+
+  <!-- ===================================================================
+       Keyboard Shortcuts Help Dialog
+       =================================================================== -->
+  <div id="help-modal" class="help-modal" aria-hidden="true">
+    <div class="help-dialog">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-glass-border-subtle); padding-bottom: 0.5rem;">
+        <span style="font-weight: 700; color: var(--text-highlight);">Keyboard Shortcuts</span>
+        <button id="btn-close-help" class="icon-btn" title="Close">✕</button>
+      </div>
+      <table class="help-table">
+        <tbody>
+          <tr>
+            <td><kbd>→</kbd> or <kbd>SPACE</kbd></td>
+            <td>Advance to next slide</td>
+          </tr>
+          <tr>
+            <td><kbd>←</kbd></td>
+            <td>Return to previous slide</td>
+          </tr>
+          <tr>
+            <td><kbd>1</kbd> - <kbd>9</kbd>, <kbd>0</kbd></td>
+            <td>Jump directly to slide 1-10</td>
+          </tr>
+          <tr>
+            <td><kbd>O</kbd></td>
+            <td>Toggle slide overview grid</td>
+          </tr>
+          <tr>
+            <td><kbd>F</kbd></td>
+            <td>Toggle fullscreen mode</td>
+          </tr>
+          <tr>
+            <td><kbd>H</kbd> or <kbd>?</kbd></td>
+            <td>Show this help dialog</td>
+          </tr>
+          <tr>
+            <td><kbd>ESC</kbd></td>
+            <td>Close open modals</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Classic scripts — load deck engine first, then the app bootstrap -->
+  <script src="js/deck.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
