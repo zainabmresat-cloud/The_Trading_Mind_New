@@ -333,3 +333,21 @@
   color: var(--text-dim);
   margin-top: 0.2rem;
 }
+
+
+/* ---- Three.js Canvas Fill ---- */
+#three-container {
+  position: relative;
+}
+
+#three-container canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: var(--radius-lg);
+  cursor: grab;
+}
+
+#three-container canvas:active {
+  cursor: grabbing;
+}

@@ -246,13 +246,8 @@
 
         <div class="slide-body">
           <div class="three-canvas-wrapper">
-            <!-- 3D Canvas Canvas Slot -->
-            <div id="three-container" style="width: 100%; height: 100%;">
-              <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-muted); font-family: var(--font-mono); gap: 0.5rem;">
-                <div style="font-size: 1.5rem; color: var(--cyan-primary);">[ 3D NEURAL MANIFOLD ENGINE ]</div>
-                <div style="font-size: 0.85rem;">Milestone 4 Three.js Interactive WebGL Viewport Target</div>
-              </div>
-            </div>
+            <!-- 3D WebGL Canvas — populated by js/three-scene.js -->
+            <div id="three-container" style="width: 100%; height: 100%;"></div>
 
             <!-- Overlay State Controls -->
             <div class="three-overlay-controls">
@@ -1046,8 +1041,12 @@
     </div>
   </div>
 
-  <!-- Classic scripts — load deck engine first, then the app bootstrap -->
+  <!-- Three.js UMD build (locally bundled — no CDN, works with file://) -->
+  <script src="js/vendor/three.min.js"></script>
+
+  <!-- Classic scripts — load in dependency order -->
   <script src="js/deck.js"></script>
+  <script src="js/three-scene.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

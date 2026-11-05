@@ -53,20 +53,23 @@
 
 ---
 
-### Phase 4: Three.js 3D Animated Mind Visualization
-- [ ] Set up Three.js in `frontend/assets/vendor/` or local ESM loader
-- [ ] Implement `frontend/js/three-scene.js`:
-  - [ ] WebGL renderer initialization, camera, scene graph, lighting, and resize handling
-  - [ ] 3D Neural brain / emotional landscape lattice geometry
-  - [ ] Orbiting particle field with custom vertex animation
-  - [ ] Dynamic shader material with wave pulse frequencies
-  - [ ] State transition controller:
-    - [ ] `FLOW` state: Harmonious cyan-emerald waves, calm orbit
-    - [ ] `GREED` state: Golden amber expansion, high-energy particle burst
-    - [ ] `FEAR` state: Crimson contraction, chaotic trajectory
-    - [ ] `TILT` state: Dual-tone chromatic aberration, angular displacement, erratic tumbling
-  - [ ] Mouse drag / touch orbit controls and zoom bounds
-  - [ ] Performance throttling: pauses rendering when Slide 3 is not active
+### Phase 4: Three.js 3D Animated Mind Visualization (Completed)
+- [x] Set up Three.js UMD r134 locally at [`js/vendor/three.min.js`](file:///C:/Users/ragha/OneDrive/Desktop/The_Trading_Mind_New/js/vendor/three.min.js) (601KB, no CDN — works with file://)
+- [x] Implement [`js/three-scene.js`](file:///C:/Users/ragha/OneDrive/Desktop/The_Trading_Mind_New/js/three-scene.js) (classic IIFE, reads window.THREE):
+  - [x] WebGL renderer (antialias, pixel-ratio aware), perspective camera, scene graph, ambient + 3× point lights, exponential fog, responsive resize handler
+  - [x] 3D Icosahedron brain mesh (detail 4, 1,280 triangles) + wireframe overlay + glowing inner sphere core
+  - [x] 1,800-particle orbital field with per-particle spherical coordinate animation
+  - [x] 3 orbital torus rings with independent rotation axes
+  - [x] 500-point background star field
+  - [x] Per-frame vertex wave displacement driving brain surface morphing (pulseAmp, pulseFreq per state)
+  - [x] Smooth lerped state transitions (colour, scale, speed, displacement, all params interpolated):
+    - [x] `FLOW`  — Cyan/emerald harmonic waves, calm orbit, balanced particles
+    - [x] `GREED` — Gold/amber expansion ×1.18 scale, high-energy double-speed particles
+    - [x] `FEAR`  — Crimson contraction ×0.78 scale, particles collapse inward
+    - [x] `TILT`  — Purple/magenta chaos, spiky vertex displacement, erratic jitter rotation
+  - [x] Mouse drag orbit controls + scroll-wheel zoom (clamped 3–10 units), touch orbit support
+  - [x] Performance throttling: `pause()` / `resume()` driven by `deck:slidechange` event — only renders on Slide 3
+- [x] Load order in index.html: `three.min.js` → `deck.js` → `three-scene.js` → `app.js` (all classic `<script>` tags)
 
 ---
 
