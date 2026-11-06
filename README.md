@@ -3,7 +3,9 @@
 > **Neuro-Finance & Trading Psychology — Interactive Presentation System**
 
 A fully self-contained, 10-slide interactive presentation that bridges quantitative finance and trading psychology. The frontend runs entirely in the browser (including offline) while an optional Python FastAPI backend delivers high-fidelity Monte Carlo simulations and behavioral analytics.
+## Presentation Preview
 
+![Slide 1 - The Anatomy of a Trade](screenshots/slide1.png)
 ---
 
 ## Table of Contents
