@@ -695,6 +695,7 @@
   var Slides = {
 
     _initialized: {},  // tracks which slides have been init'd
+    _intervals:   {},  // stores interval IDs keyed by slide number for safe cleanup
 
     /* -- Slide 1: Anatomy of a Trade -------------------------------- */
     initSlide1: function () {
@@ -715,9 +716,11 @@
       });
 
       // Animated neurochemical telemetry ticker
+      // Store the interval ID so it can be cleared on cleanup and never duplicated.
       var logs = slide.querySelectorAll(".terminal-logs div");
       var idx  = 0;
-      setInterval(function () {
+      if (this._intervals.slide1) { clearInterval(this._intervals.slide1); }
+      this._intervals.slide1 = setInterval(function () {
         logs.forEach(function (l) { l.style.opacity = "0.5"; });
         if (logs[idx]) { logs[idx].style.opacity = "1"; }
         idx = (idx + 1) % logs.length;
