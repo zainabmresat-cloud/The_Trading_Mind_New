@@ -104,9 +104,17 @@
       }
     });
 
-    // Backend status check
+    // Bootstrap simulation engine (simulators.js must be loaded before app.js)
+    if (typeof window.TradingSimulators !== "undefined") {
+      window.TradingSimulators.Slides.bootstrap();
+      console.log("[App] TradingSimulators engine bootstrapped.");
+    } else {
+      console.warn("[App] TradingSimulators not found — simulators.js may not be loaded.");
+    }
+
+    // Backend status check (uses ApiClient from api-client.js when available)
     self.checkBackendStatus();
-    setInterval(function () { self.checkBackendStatus(); }, 10000);
+    setInterval(function () { self.checkBackendStatus(); }, 15000);
   };
 
   App.prototype.checkBackendStatus = function () {
@@ -116,8 +124,22 @@
 
     var self = this;
 
-    // Use XMLHttpRequest so the timeout is handled without AbortController
-    // (keeps compatibility with older browsers too)
+    // Prefer ApiClient (api-client.js) for the health check if available.
+    // Fall back to raw XHR for resilience.
+    if (typeof window.ApiClient !== "undefined") {
+      window.ApiClient.checkHealth(function (isOnline) {
+        self.backendOnline = isOnline;
+        if (isOnline) {
+          statusPill.className = "status-pill online";
+          statusText.textContent = "ENGINE: FASTAPI ONLINE";
+        } else {
+          self._setBackendOffline(statusPill, statusText);
+        }
+      });
+      return;
+    }
+
+    // Raw XHR fallback
     var xhr = new XMLHttpRequest();
     var timedOut = false;
     var timer = setTimeout(function () {
