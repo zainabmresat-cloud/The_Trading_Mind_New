@@ -6,6 +6,7 @@ A fully self-contained, 10-slide interactive presentation that bridges quantitat
 ## Presentation Preview
 
 ![Slide 1 - The Anatomy of a Trade](screenshots/slide1.png)
+![Slide 3 - The 3D Emotional Landscape](screenshots/slide3.png)
 ---
 
 ## Table of Contents
